@@ -1,0 +1,10 @@
+join the table:-
+
+select s.name AS student_name, c.name AS courses_name, 
+e.enrollment_date, c.fee FROM
+Enrollment e JOIN 
+Students s ON e.s_id = s.s_id
+JOIN Courses c ON c.c_id = e.c_id;
+
+postgres=# \c students
+You are now connected to database "students" as user "postgres".
